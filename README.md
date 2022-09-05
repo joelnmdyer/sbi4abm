@@ -31,7 +31,7 @@ and
 }
 ```
 
-This package makes use of the excellent `sbi` package (https://github.com/mackelab/sbi). I changed a few lines in the source code for `sbi` to allow $z$-scoring of data to be specified as a boolean argument for `SNPE` and `SNRE`, and I've included the modified package in this repository for that reason.
+This package makes use of the `sbi` package (https://github.com/mackelab/sbi). I changed a few lines in the source code for `sbi` to allow $z$-scoring of data to be specified as a boolean argument for `SNPE` and `SNRE`, and I've included the modified package in this repository for that reason.
 
 ## Example usage
 If you want to get a parameter posterior out for the Hopfield model using a recurrent graph neural network and masked autoregressive flow with a budget of 1000 simulations from the ABM to train the density estimator, you can navigate to the `sbi4abm/utils` folder and run
