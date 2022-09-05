@@ -1,4 +1,4 @@
-# sbi4abm
+# sbi4abm: simulation-based inference for agent-based modelling
 This is the code used for two papers:
 
 **Black-box Bayesian inference for economic agent-based models**\
