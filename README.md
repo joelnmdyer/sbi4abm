@@ -9,14 +9,14 @@ The code in this repository has been used in the following two papers:
 
 **Black-box Bayesian inference for economic agent-based models**\
 _Dyer, J; Cannon, P; Farmer, J. D.; Schmon, S. M._\
-arxiv 2202:00625 (2022)
+arxiv 2202:00625 (2022)\
 [45-minute talk on this paper on INET Oxford YouTube](https://www.youtube.com/watch?v=yVNE8focE30)
 
 and
 
 **Calibrating agent-based models to microdata with graph neural networks**\
 _Dyer, J; Cannon, P; Farmer, J. D.; Schmon, S. M._\
-Soptlight Paper at the ICML 2022 Workshop on AI for Agent-based Modelling (2022)
+Soptlight Paper at the ICML 2022 Workshop on AI for Agent-based Modelling (2022)\
 [5-minute video on the ICML 2022 AI4ABM Workshop website](https://icml.cc/virtual/2022/workshop/13470#wse-detail-18835)
 
 These papers can be cited using the following citation info:
