@@ -23,7 +23,7 @@ These papers can be cited using the following citation info:
 
 ```
 @article{dyer2022black,
-  title={Black-box Bayesian inference for economic agent-based models},
+  title={{Black-box Bayesian inference for economic agent-based models}},
   author={Dyer, Joel and Cannon, Patrick and Farmer, J Doyne and Schmon, Sebastian},
   journal={arXiv preprint arXiv:2202.00625},
   year={2022}
@@ -32,7 +32,7 @@ These papers can be cited using the following citation info:
 and
 ```
 @article{dyer2022calibrating,
-         title={Calibrating Agent-based Models to Microdata with Graph Neural Networks},
+         title={{Calibrating Agent-based Models to Microdata with Graph Neural Networks}},
          author={Dyer, Joel and Cannon, Patrick and Farmer, J Doyne and Schmon, Sebastian M},
          journal={arXiv preprint arXiv:2206.07570},
          year={2022}
