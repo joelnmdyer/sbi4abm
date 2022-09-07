@@ -51,5 +51,5 @@ python job_script.py --task hop --method maf_rgcn --outloc <location_to_save_out
 Applying these methods to a new model not contained in this respository can be done like so:
 * Add the model to the `models` folder, wrapping the model up in the same format as in the examples contained in that folder
 * Add details on the prior density, model instantiation, and "true" data in the `utils/io.py` file
-* Ensure the density (ratio) estimator is equipped with an appropriate embedding network in the `utils/job_sciprt.py` and `inference/neural.py` files
+* Ensure the density (ratio) estimator is equipped with an appropriate embedding network in the `utils/job_script.py` and `inference/neural.py` files
 * Training the density (ratio) estimator using the same command as in the **Example usage** section above
