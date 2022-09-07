@@ -17,7 +17,7 @@ and
 [**Calibrating agent-based models to microdata with graph neural networks**](https://openreview.net/pdf?id=ZWyHGTUcgJD)\
 _Dyer, J.; Cannon, P.; Farmer, J. D.; Schmon, S. M._\
 Soptlight Paper at the ICML 2022 Workshop on AI for Agent-based Modelling (2022)\
-[5-minute video on the ICML 2022 AI4ABM Workshop website](https://icml.cc/virtual/2022/workshop/13470#wse-detail-18835)
+[5-minute video from the ICML 2022 AI4ABM Workshop](https://slideslive.com/38985937)
 
 These papers can be cited using the following citation info:
 
