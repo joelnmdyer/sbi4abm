@@ -9,7 +9,7 @@ The code in this repository has been used in the following two papers:
 
 [**Black-box Bayesian inference for economic agent-based models**](https://arxiv.org/abs/2202.00625)\
 _Dyer, J.; Cannon, P.; Farmer, J. D.; Schmon, S. M._\
-arxiv 2202:00625 (2022)\
+arXiv:2202.00625 (2022)\
 [45-minute talk on this paper on INET Oxford YouTube](https://www.youtube.com/watch?v=yVNE8focE30)
 
 and
