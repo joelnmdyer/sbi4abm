@@ -9,8 +9,8 @@ from pyknos.nflows import flows, transforms
 from pyknos.nflows.nn import nets
 from torch import Tensor, nn, relu, tanh, tensor, uint8
 
-from sbi.utils.sbiutils import standardizing_net, standardizing_transform
-from sbi.utils.torchutils import create_alternating_binary_mask
+from sbi4abm.sbi.utils.sbiutils import standardizing_net, standardizing_transform
+from sbi4abm.sbi.utils.torchutils import create_alternating_binary_mask
 
 
 def build_made(

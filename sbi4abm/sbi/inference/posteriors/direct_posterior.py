@@ -12,18 +12,18 @@ import torch.distributions.transforms as torch_tf
 from torch import Tensor, log, nn
 from warnings import warn
 
-from sbi import utils as utils
+from sbi4abm.sbi import utils as utils
 from pyknos.mdn.mdn import MultivariateGaussianMDN as mdn
-from sbi.inference.posteriors.base_posterior import NeuralPosterior
-from sbi.types import Shape
-from sbi.utils import del_entries, mcmc_transform, rejection_sample, within_support
-from sbi.utils.torchutils import (
+from sbi4abm.sbi.inference.posteriors.base_posterior import NeuralPosterior
+from sbi4abm.sbi.types import Shape
+from sbi4abm.sbi.utils import del_entries, mcmc_transform, rejection_sample, within_support
+from sbi4abm.sbi.utils.torchutils import (
     atleast_2d,
     batched_first_of_batch,
     ensure_theta_batched,
     atleast_2d_float32_tensor,
 )
-from sbi.utils.conditional_density import extract_and_transform_mog, condition_mog
+from sbi4abm.sbi.utils.conditional_density import extract_and_transform_mog, condition_mog
 
 
 class DirectPosterior(NeuralPosterior):

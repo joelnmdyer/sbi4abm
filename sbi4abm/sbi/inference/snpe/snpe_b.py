@@ -8,8 +8,8 @@ import torch
 from torch import Tensor
 from torch.utils.tensorboard import SummaryWriter
 
-import sbi.utils as utils
-from sbi.inference.snpe.snpe_base import PosteriorEstimator
+import sbi4abm.sbi.utils as utils
+from sbi4abm.sbi.inference.snpe.snpe_base import PosteriorEstimator
 
 
 class SNPE_B(PosteriorEstimator):

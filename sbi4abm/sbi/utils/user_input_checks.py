@@ -13,9 +13,9 @@ from scipy.stats._multivariate import multi_rv_frozen
 from torch import Tensor, float32, nn
 from torch.distributions import Distribution, Uniform
 
-from sbi.utils.sbiutils import warn_on_iid_x, within_support
-from sbi.utils.torchutils import BoxUniform, atleast_2d
-from sbi.utils.user_input_checks_utils import (
+from sbi4abm.sbi.utils.sbiutils import warn_on_iid_x, within_support
+from sbi4abm.sbi.utils.torchutils import BoxUniform, atleast_2d
+from sbi4abm.sbi.utils.user_input_checks_utils import (
     CustomPytorchWrapper,
     MultipleIndependent,
     PytorchReturnTypeWrapper,

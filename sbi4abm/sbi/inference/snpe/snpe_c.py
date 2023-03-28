@@ -10,11 +10,11 @@ from pyknos.nflows.transforms import CompositeTransform
 from torch import Tensor, eye, ones
 from torch.distributions import MultivariateNormal, Uniform
 
-from sbi import utils as utils
-from sbi.inference.posteriors.direct_posterior import DirectPosterior
-from sbi.inference.snpe.snpe_base import PosteriorEstimator
-from sbi.types import TensorboardSummaryWriter
-from sbi.utils import (
+from sbi4abm.sbi import utils as utils
+from sbi4abm.sbi.inference.posteriors.direct_posterior import DirectPosterior
+from sbi4abm.sbi.inference.snpe.snpe_base import PosteriorEstimator
+from sbi4abm.sbi.types import TensorboardSummaryWriter
+from sbi4abm.sbi.utils import (
     batched_mixture_mv,
     batched_mixture_vmv,
     check_dist_class,

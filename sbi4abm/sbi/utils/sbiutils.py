@@ -16,8 +16,8 @@ from torch.distributions import Distribution, Independent, biject_to
 import torch.distributions.transforms as torch_tf
 from tqdm.auto import tqdm
 
-from sbi import utils as utils
-from sbi.utils.torchutils import BoxUniform, atleast_2d
+from sbi4abm.sbi import utils as utils
+from sbi4abm.sbi.utils.torchutils import BoxUniform, atleast_2d
 
 
 def warn_if_zscoring_changes_data(x: Tensor, duplicate_tolerance: float = 0.1) -> None:

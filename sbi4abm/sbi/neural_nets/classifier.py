@@ -6,7 +6,7 @@ import torch
 from pyknos.nflows.nn import nets
 from torch import Tensor, nn, relu
 
-from sbi.utils.sbiutils import standardizing_net
+from sbi4abm.sbi.utils.sbiutils import standardizing_net
 
 
 class StandardizeInputs(nn.Module):

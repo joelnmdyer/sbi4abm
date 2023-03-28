@@ -5,8 +5,8 @@ from numpy import ndarray
 from torch import Tensor
 from torch.distributions.transforms import Transform
 
-from sbi.inference.abc.abc_base import ABCBASE
-from sbi.utils import KDEWrapper, get_kde, process_x
+from sbi4abm.sbi.inference.abc.abc_base import ABCBASE
+from sbi4abm.sbi.utils import KDEWrapper, get_kde, process_x
 
 
 class MCABC(ABCBASE):

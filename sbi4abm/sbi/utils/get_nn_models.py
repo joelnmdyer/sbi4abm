@@ -6,13 +6,13 @@ from typing import Callable
 
 from torch import nn
 
-from sbi.neural_nets.classifier import (
+from sbi4abm.sbi.neural_nets.classifier import (
     build_linear_classifier,
     build_mlp_classifier,
     build_resnet_classifier,
 )
-from sbi.neural_nets.flow import build_made, build_maf, build_nsf
-from sbi.neural_nets.mdn import build_mdn
+from sbi4abm.sbi.neural_nets.flow import build_made, build_maf, build_nsf
+from sbi4abm.sbi.neural_nets.mdn import build_mdn
 
 
 def classifier_nn(

@@ -14,11 +14,11 @@ from pyknos.nflows.transforms import CompositeTransform
 from torch import Tensor
 from torch.distributions import MultivariateNormal
 
-import sbi.utils as utils
-from sbi.inference.posteriors.direct_posterior import DirectPosterior
-from sbi.inference.snpe.snpe_base import PosteriorEstimator
-from sbi.types import TensorboardSummaryWriter, TorchModule
-from sbi.utils import torchutils
+import sbi4abm.sbi.utils as utils
+from sbi4abm.sbi.inference.posteriors.direct_posterior import DirectPosterior
+from sbi4abm.sbi.inference.snpe.snpe_base import PosteriorEstimator
+from sbi4abm.sbi.types import TensorboardSummaryWriter, TorchModule
+from sbi4abm.sbi.utils import torchutils
 
 
 class SNPE_A(PosteriorEstimator):

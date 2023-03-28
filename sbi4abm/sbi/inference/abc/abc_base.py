@@ -8,7 +8,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
 from torch import Tensor
 
-from sbi.simulators.simutils import simulate_in_batches
+from sbi4abm.sbi.simulators.simutils import simulate_in_batches
 
 
 class ABCBASE(ABC):

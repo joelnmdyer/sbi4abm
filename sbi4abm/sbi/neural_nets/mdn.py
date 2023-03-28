@@ -6,7 +6,7 @@ from pyknos.mdn.mdn import MultivariateGaussianMDN
 from pyknos.nflows import flows, transforms
 from torch import Tensor, nn
 
-import sbi.utils as utils
+import sbi4abm.sbi.utils as utils
 
 
 def build_mdn(

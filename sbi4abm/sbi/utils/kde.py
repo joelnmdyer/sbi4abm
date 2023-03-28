@@ -7,7 +7,7 @@ from sklearn.neighbors import KernelDensity
 from torch import Tensor
 from torch.distributions.transforms import identity_transform
 
-from sbi.types import transform_types
+from sbi4abm.sbi.types import transform_types
 
 
 # The implementation of KDE was adapted from

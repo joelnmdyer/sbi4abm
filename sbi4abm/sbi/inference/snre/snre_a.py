@@ -3,10 +3,10 @@ from typing import Any, Callable, Dict, Optional, Union
 import torch
 from torch import Tensor, nn, ones
 
-from sbi.inference.posteriors.base_posterior import NeuralPosterior
-from sbi.inference.snre.snre_base import RatioEstimator
-from sbi.types import TensorboardSummaryWriter
-from sbi.utils import del_entries
+from sbi4abm.sbi.inference.posteriors.base_posterior import NeuralPosterior
+from sbi4abm.sbi.inference.snre.snre_base import RatioEstimator
+from sbi4abm.sbi.types import TensorboardSummaryWriter
+from sbi4abm.sbi.utils import del_entries
 
 
 class SNRE_A(RatioEstimator):

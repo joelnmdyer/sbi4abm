@@ -17,8 +17,8 @@ from torch import Tensor
 from torch import multiprocessing as mp
 from torch import nn
 
-from sbi import utils as utils
-from sbi.mcmc import (
+from sbi4abm.sbi import utils as utils
+from sbi4abm.sbi.mcmc import (
     IterateParameters,
     Slice,
     SliceSampler,
@@ -26,19 +26,19 @@ from sbi.mcmc import (
     prior_init,
     sir,
 )
-from sbi.types import Array, Shape
-from sbi.utils.sbiutils import (
+from sbi4abm.sbi.types import Array, Shape
+from sbi4abm.sbi.utils.sbiutils import (
     check_warn_and_setstate,
     mcmc_transform,
     optimize_potential_fn,
     rejection_sample,
 )
-from sbi.utils.torchutils import (
+from sbi4abm.sbi.utils.torchutils import (
     ScalarFloat,
     atleast_2d_float32_tensor,
     ensure_theta_batched,
 )
-from sbi.utils.user_input_checks import check_for_possibly_batched_x_shape, process_x
+from sbi4abm.sbi.utils.user_input_checks import check_for_possibly_batched_x_shape, process_x
 
 
 class NeuralPosterior(ABC):

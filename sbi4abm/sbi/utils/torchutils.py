@@ -11,8 +11,8 @@ import torch
 from torch import Tensor, float32
 from torch.distributions import Independent, Uniform
 
-from sbi import utils as utils
-from sbi.types import Array, OneOrMore, ScalarFloat
+from sbi4abm.sbi import utils as utils
+from sbi4abm.sbi.types import Array, OneOrMore, ScalarFloat
 
 
 def process_device(device: str, prior: Optional[Any] = None) -> str:

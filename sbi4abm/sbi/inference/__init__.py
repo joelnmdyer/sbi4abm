@@ -11,21 +11,21 @@ from typing import (
     cast,
 )
 
-from sbi.inference.abc.mcabc import MCABC
-from sbi.inference.abc.smcabc import SMCABC
-from sbi.inference.base import (  # noqa: F401
+from sbi4abm.sbi.inference.abc.mcabc import MCABC
+from sbi4abm.sbi.inference.abc.smcabc import SMCABC
+from sbi4abm.sbi.inference.base import (  # noqa: F401
     NeuralInference,
     check_if_proposal_has_default_x,
     infer,
     simulate_for_sbi,
 )
-from sbi.inference.snle.snle_a import SNLE_A
+from sbi4abm.sbi.inference.snle.snle_a import SNLE_A
 # Unimplemented: don't export
-from sbi.inference.snpe.snpe_a import SNPE_A
-from sbi.inference.snpe.snpe_b import SNPE_B
-from sbi.inference.snpe.snpe_c import SNPE_C  # noqa: F401
-from sbi.inference.snre import SNRE, SNRE_A, SNRE_B  # noqa: F401
-from sbi.utils.user_input_checks import prepare_for_sbi
+from sbi4abm.sbi.inference.snpe.snpe_a import SNPE_A
+from sbi4abm.sbi.inference.snpe.snpe_b import SNPE_B
+from sbi4abm.sbi.inference.snpe.snpe_c import SNPE_C  # noqa: F401
+from sbi4abm.sbi.inference.snre import SNRE, SNRE_A, SNRE_B  # noqa: F401
+from sbi4abm.sbi.utils.user_input_checks import prepare_for_sbi
 
 SNL = SNLE = SNLE_A
 _snle_family = ["SNL"]

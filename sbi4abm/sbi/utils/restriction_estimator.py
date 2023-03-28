@@ -11,13 +11,13 @@ from torch.utils import data
 from torch.utils.data.sampler import SubsetRandomSampler, WeightedRandomSampler
 from tqdm.auto import tqdm
 
-from sbi.types import Shape
-from sbi.utils.sbiutils import (
+from sbi4abm.sbi.types import Shape
+from sbi4abm.sbi.utils.sbiutils import (
     get_simulations_since_round,
     handle_invalid_x,
     standardizing_net,
 )
-from sbi.utils.user_input_checks import validate_theta_and_x
+from sbi4abm.sbi.utils.user_input_checks import validate_theta_and_x
 
 
 def build_input_layer(

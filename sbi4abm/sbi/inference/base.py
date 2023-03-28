@@ -13,19 +13,19 @@ from torch import Tensor
 from torch.utils import data
 from torch.utils.tensorboard import SummaryWriter
 
-import sbi.inference
-from sbi.inference.posteriors.base_posterior import NeuralPosterior
-from sbi.simulators.simutils import simulate_in_batches
-from sbi.utils import (
+import sbi4abm.sbi.inference
+from sbi4abm.sbi.inference.posteriors.base_posterior import NeuralPosterior
+from sbi4abm.sbi.simulators.simutils import simulate_in_batches
+from sbi4abm.sbi.utils import (
     get_log_root,
     handle_invalid_x,
     warn_if_zscoring_changes_data,
     warn_on_invalid_x,
     warn_on_invalid_x_for_snpec_leakage,
 )
-from sbi.utils.sbiutils import get_simulations_since_round
-from sbi.utils.torchutils import process_device
-from sbi.utils.user_input_checks import prepare_for_sbi
+from sbi4abm.sbi.utils.sbiutils import get_simulations_since_round
+from sbi4abm.sbi.utils.torchutils import process_device
+from sbi4abm.sbi.utils.user_input_checks import prepare_for_sbi
 
 
 def infer(

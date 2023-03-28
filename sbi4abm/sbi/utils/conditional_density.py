@@ -9,8 +9,8 @@ from torch import Tensor
 
 from pyknos.mdn.mdn import MultivariateGaussianMDN as mdn
 from pyknos.nflows.flows import Flow
-from sbi.utils.torchutils import ensure_theta_batched
-from sbi.utils.torchutils import BoxUniform
+from sbi4abm.sbi.utils.torchutils import ensure_theta_batched
+from sbi4abm.sbi.utils.torchutils import BoxUniform
 
 
 def eval_conditional_density(

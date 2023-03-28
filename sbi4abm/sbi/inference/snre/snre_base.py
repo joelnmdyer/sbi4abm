@@ -8,17 +8,17 @@ from torch.nn.utils import clip_grad_norm_
 from torch.utils import data
 from torch.utils.tensorboard import SummaryWriter
 
-from sbi import utils as utils
-from sbi.inference.base import NeuralInference
-from sbi.inference.posteriors.ratio_based_posterior import RatioBasedPosterior
-from sbi.types import TorchModule
-from sbi.utils import (
+from sbi4abm.sbi import utils as utils
+from sbi4abm.sbi.inference.base import NeuralInference
+from sbi4abm.sbi.inference.posteriors.ratio_based_posterior import RatioBasedPosterior
+from sbi4abm.sbi.types import TorchModule
+from sbi4abm.sbi.utils import (
     check_estimator_arg,
     clamp_and_warn,
     validate_theta_and_x,
     x_shape_from_simulation,
 )
-from sbi.utils.sbiutils import mask_sims_from_prior
+from sbi4abm.sbi.utils.sbiutils import mask_sims_from_prior
 
 
 class RatioEstimator(NeuralInference, ABC):
