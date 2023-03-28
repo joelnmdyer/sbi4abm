@@ -42,7 +42,7 @@ def bh(g, b, R=1.01, beta=120., sigma=0.04, T=100, seed=None):
 		np.random.seed(seed)
 	
 	# Pre-generate random shocks
-	epsilon = np.random.normal(size=T) * sigma / R
+	#epsilon = np.random.normal(size=T) * sigma / R
 	
 	# This will be an array with the deviations from fundamental price
 	x = np.zeros(T)	
@@ -55,7 +55,7 @@ def bh(g, b, R=1.01, beta=120., sigma=0.04, T=100, seed=None):
 		# Proportion of number of agents following each strategy
 		n_h = _get_numbers(U_h, beta)
 		# Get price deviations
-		x[i + 3] = epsilon[i + 3] + _get_mean(n_h, g, b, x, R, i)
+		x[i + 3] = np.random.normal() * sigma / R + _get_mean(n_h, g, b, x, R, i)
 	
 	return x
 
