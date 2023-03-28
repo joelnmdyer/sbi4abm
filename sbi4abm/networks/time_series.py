@@ -5,7 +5,7 @@ implemented = ["gru", "elman"]
 class RNN(nn.Module):
 
 	def __init__(self, input_dim, hidden_dim, num_layers, mlp_dims,
-				 flavour="gru", **kwargs):
+				 flavour="gru", hidden_out_dim=None, N=None, **kwargs):
 
 		super(RNN, self).__init__(**kwargs)
 
