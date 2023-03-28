@@ -111,6 +111,7 @@ def _neural_prepare_estimator_observation(args, y, simulator):
 	network = "gru"
 	# See which summary network to use
 	de_name = args.method.split("_")
+	N = -1
 	if len(de_name) == 2:
 		de_name, network = de_name
 		naive = network == "s"
@@ -193,10 +194,10 @@ def _neural_prepare_estimator_observation(args, y, simulator):
 							"N":N}
 
 	# Create the density estimator
-	density_estimator = neural.create_density_estimator(embedding_kwargs,
+	density_estimator, z_score_x = neural.create_density_estimator(embedding_kwargs,
 														de_name)
 	sbi_method = _de2class(de_name)
-	return density_estimator, sbi_method, y, simulator, sim_pp
+	return density_estimator, sbi_method, y, simulator, sim_pp, z_score_x
 
 def _get_postprocessor(args):
 	
@@ -320,7 +321,7 @@ if __name__ == "__main__":
 		#sim_pp = _get_postprocessor(args)
 
 		# Determine whether to use hand-crafted or learned summary statistics
-		density_estimator, sbi_method, y, simulator, sim_pp = _neural_prepare_estimator_observation(args, y, simulator)
+		density_estimator, sbi_method, y, simulator, sim_pp, z_score_x = _neural_prepare_estimator_observation(args, y, simulator)
 
 		# Sample
 		if sbi_method == "SNPE":
@@ -345,7 +346,7 @@ if __name__ == "__main__":
 													  scale=args.scale,
 													  sampler=sampler,
 													  num_workers=args.nw,
-													  z_score_x=args.task not in ["hop"],
+													  z_score_x=z_score_x,
 													  outloc=outloc)
 			io.save_output(posteriors, samples, ranks, outloc)
 		else:
