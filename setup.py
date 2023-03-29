@@ -11,10 +11,13 @@ setup(name='sbi4abm',
 )
 
 REQUIRED = [
+    "arviz",
     "joblib>=1.0.0",
     "matplotlib",
+    "numba",
     "numpy",
     "pillow",
+    "POT",
     "pyknos>=0.14.2",
     "pyro-ppl>=1.3.1",
     "scikit-learn",
