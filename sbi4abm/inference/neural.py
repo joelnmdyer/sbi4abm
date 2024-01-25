@@ -50,7 +50,7 @@ def create_density_estimator(embedding_kwargs, density_estimator):
 		density_estimator = utils.get_nn_models.classifier_nn(density_estimator,
 															  embedding_net_x=embedding_net,
 															  z_score_x=z_score_x)
-	return density_estimator
+	return density_estimator, z_score_x
 
 
 def sbi_training(simulator,
