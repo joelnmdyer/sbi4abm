@@ -15,7 +15,7 @@ REQUIRED = [
     "tensorboard",
     "torch>=1.8.0",
     "torch_geometric==2.3",
-    "torch-geometric-temporal",
+    #"torch-geometric-temporal",
     "tqdm",
 ]
 
